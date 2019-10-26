@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css?family=Arvo|Fascinate+Inline|Fjalla+One&display=swap');
+
+html {
+    background-color: #F2F4F3;
+}
+
+body {
+    width: 100vw;
+    padding: 5px;
+    font-size: 18px;
+    color: #330C2F;
+    font-family: 'Fascinate Inline', cursive;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.header {
+    width: 100vw;
+    padding: 20px;
+}
+
+header {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+form {
+    margin: auto;
+    width: 50vw;
+}
+
+#text-form {
+    margin: 0 auto;
+}
+
+#text-box {
+    font-family: 'Arvo', serif;
+    color: #330C2F;
+    margin: auto;
+    font-size: 16px;
+    width: 50vw;
+    height: 75vh;
+    padding: 10px 20px;
+    -moz-appearance:none;
+    outline:0px none transparent;
+    border: none;
+    border-radius: 10px;
+}
+  
+textarea:focus, input:focus{
+      outline: 0;
+      border: none;
+}
+  
+*:focus {
+      outline: 0;
+}
+
+#estimateButton {
+      font-size: 20px;
+      color: white;
+      position: relative;
+      top: 25px;
+      left: 20px;
+      background-color: #5EB1BF;
+      padding: 10px 20px 10px 20px;
+      border-radius: 5px;
+}
+
+#minRead {
+    padding-left: 20px;
+    position: relative;
+    top: 40px;
+    font-size: 20px;
+}
+
+@media (max-width: 769px) {
+    body {
+        margin: auto;
+        width: 90%;
+    }
+
+    .header {
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        font-size: 22px;
+    }
+
+    .main-container {
+        display: block;
+        width: 100%;
+    }
+
+    #estimateButton {
+        margin: auto;
+        position: static;
+        display: inline;
+    }
+
+    #minRead {
+        display: inline;
+        position: static;
+    }
+
+    form, #text-box {
+        width: 90%;
+    }
+}
